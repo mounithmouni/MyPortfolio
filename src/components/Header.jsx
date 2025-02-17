@@ -1,8 +1,19 @@
 import { useState } from "react";
 import Home from "./Home";
+// import Loader from "./Loader";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useGSAP(() => {
+    gsap.from("#navbar", {
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+    });
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -10,8 +21,9 @@ function Header() {
 
   return (
     <>
-      <div className=".container1">
-        <header className="nav-header">
+      {/* <Loader /> */}
+      <div id="navbar" className=".container1">
+        <header className="nav-header" id="navbar">
           <div className="nav">
             <p id="logo" className="mt-3 text-base">
               MOUNITH

@@ -1,3 +1,4 @@
+import zomatoClone from "../assets/zomato.png";
 export const cardData = [
   {
     name: "B.Tech",
@@ -16,5 +17,26 @@ export const cardData = [
     clgName: "Prathibha Vidyalaya English Medium High School",
     yop: 2018,
     stream: "Maths, Science, English and Social Science",
+  },
+];
+
+export const PROJECTSDATA = [
+  {
+    btn1: "ReactJs",
+    btn2: "Tailwind CSS",
+    projName: "Zomato Clone",
+    imgUrl: zomatoClone,
+  },
+  {
+    btn1: "ReactJs",
+    btn2: "Tailwind CSS",
+    projName: "Weather App",
+    imgUrl: zomatoClone,
+  },
+  {
+    btn1: "ReactJs",
+    btn2: "Tailwind CSS",
+    projName: "Todo List",
+    imgUrl: zomatoClone,
   },
 ];
