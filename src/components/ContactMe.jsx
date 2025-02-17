@@ -39,7 +39,7 @@ export default function ContactMe() {
           start: "-140px 80%",
           end: "6px 500px",
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       }
     );
