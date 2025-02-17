@@ -59,7 +59,7 @@ export default function Home() {
     <>
       <section
         id="Home"
-        className="pt-10 mx-10 flex flex-col items-start sm:pt-56 sm:ml-36 sm:h-screen"
+        className="pt-10 ml-5 mr-10 flex flex-col items-start  sm:pt-56 sm:ml-36 sm:h-screen"
       >
         <div id="hi-There" className="hiThere mt-5 sm:m-0">
           <p id="hi-Para" className="font-extrabold text-lg sm:text-2xl">

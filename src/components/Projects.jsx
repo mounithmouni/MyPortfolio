@@ -12,7 +12,7 @@ export default function Projects() {
       "#blackBack",
       {
         opacity: 0,
-        x: -1300, // Keeps the black box sliding in from the left
+        x: -300, // Keeps the black box sliding in from the left
         duration: 0.4,
         delay: 1,
       },
@@ -33,7 +33,7 @@ export default function Projects() {
       ".card",
       {
         opacity: 0,
-        x: 1300,
+        x: 300,
       },
       {
         x: 0,
@@ -74,7 +74,7 @@ export default function Projects() {
     <>
       <section
         id="Projects"
-        className="h-[100%] mt-20 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
+        className="h-vh mt-20 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
       >
         <div
           id="blackBack"

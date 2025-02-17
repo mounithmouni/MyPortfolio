@@ -27,7 +27,7 @@ export default function ContactMe() {
       ["#d1", "#d2", "#d3"],
       {
         opacity: 0,
-        x: 1300,
+        x: 300,
         duration: 1,
       },
       {
@@ -48,7 +48,7 @@ export default function ContactMe() {
     <>
       <section
         id="Contact"
-        className="h-[100%] mt-20 sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
+        className="h-[130vh] mt-20 sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
       >
         <div id="headers-Cme" className="text-center w-[90%]">
           <p
