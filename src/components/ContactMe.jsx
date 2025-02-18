@@ -16,8 +16,8 @@ export default function ContactMe() {
         stagger: 0.3,
         scrollTrigger: {
           trigger: "#headers-Cme",
-          start: "100px 80%",
-          end: "350px 500px",
+          start: "-140px 80%",
+          end: "-10px 500px",
           scrub: true,
           // markers: true,
         },
@@ -37,7 +37,7 @@ export default function ContactMe() {
         scrollTrigger: {
           trigger: "#quickLink",
           start: "-140px 80%",
-          end: "6px 500px",
+          end: "1px 500px",
           scrub: true,
           // markers: true,
         },
@@ -48,7 +48,7 @@ export default function ContactMe() {
     <>
       <section
         id="Contact"
-        className="h-[130vh] mt-20 sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
+        className="h-[1100px]  mt-[400px] sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
       >
         <div id="headers-Cme" className="text-center w-[90%]">
           <p

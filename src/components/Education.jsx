@@ -33,7 +33,7 @@ export default function Education() {
       "#doy",
       {
         opacity: 0,
-        x: -300,
+        x: -800,
       },
       {
         opacity: 1,
@@ -80,7 +80,7 @@ export default function Education() {
     <>
       <section
         id="Education"
-        className="h-[70vh] flex flex-col items-start pt-26  sm:ml-36 sm:h-screen"
+        className="h-screen flex flex-col items-start pt-26  sm:ml-36 sm:h-screen"
       >
         <div className="text-center w-[90%] flex justify-center items-center">
           <p

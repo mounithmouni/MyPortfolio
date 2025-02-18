@@ -74,7 +74,7 @@ export default function Projects() {
     <>
       <section
         id="Projects"
-        className="h-[100%] mt-20 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
+        className="max-h-screen -mt-[300px] sm:mt-0 flex flex-col items-start pt-26 ml-10 sm:ml-36  "
       >
         <div
           id="blackBack"
