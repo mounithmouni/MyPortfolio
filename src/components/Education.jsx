@@ -84,7 +84,7 @@ export default function Education() {
     <>
       <section
         id="Education"
-        className="h-screen flex flex-col -mt-[200px] items-start pt-26  sm:ml-36 sm:h-screen"
+        className="h-screen flex flex-col -mt-[200px] sm:mt-0 items-start pt-26  sm:ml-36 sm:h-screen"
       >
         <div className="text-center w-[90%] flex justify-center items-center">
           <p

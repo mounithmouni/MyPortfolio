@@ -76,11 +76,11 @@ export default function Projects() {
     <>
       <section
         id="Projects"
-        className="max-h-screen -mt-[100px] sm:mt-20 flex ml-10 sm:ml-36  "
+        className="max-h-screen flex flex-col items-center -mt-[200px] mx-auto sm:mt-0 sm:items-start pt-26  sm:ml-36 sm:h-screen"
       >
         <div
           id="blackBack"
-          className="bg-zinc-950 h-[1100px]  w-[90%] sm:h-[600px]  drop-shadow-2xl text-center rounded-4xl"
+          className="bg-zinc-950 h-[1150px]  w-[90%] sm:h-[600px]  drop-shadow-2xl text-center rounded-4xl"
         >
           <p
             id="proj-Title"

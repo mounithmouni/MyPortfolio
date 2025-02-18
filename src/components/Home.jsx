@@ -70,7 +70,10 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <p id="nameTitle" className="text-4xl sm:text-6xl font-extrabold">
+          <p
+            id="nameTitle"
+            className="text-4xl w-lg sm:w-auto sm:text-6xl font-extrabold"
+          >
             MOUNITH MURTHI IS
           </p>
           <p id="subName" className="text-4xl sm:text-6xl font-extrabold">

@@ -54,7 +54,7 @@ export default function ContactMe() {
     <>
       <section
         id="Contact"
-        className="h-screen  mt-[300px] sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
+        className="h-screen  mt-[450px] sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
       >
         <div id="headers-Cme" className="text-center w-[90%]">
           <p
