@@ -23,7 +23,7 @@ export default function ContactMe() {
             start: "160px 80%",
             end: "200px 500px",
             scrub: true,
-            markers: true,
+            // markers: true,
           },
         }
       );
