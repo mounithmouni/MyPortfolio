@@ -7,78 +7,80 @@ import { PROJECTSDATA } from "../utils/cardData";
 export default function Projects() {
   gsap.registerPlugin(ScrollTrigger);
 
-  useGSAP(() => {
-    gsap.fromTo(
-      "#blackBack",
-      {
-        opacity: 0,
-        x: -300, // Keeps the black box sliding in from the left
-        duration: 0.4,
-        delay: 1,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-          trigger: "#blackBack",
-          start: "150px 80%",
-          end: "200px center",
-          scrub: true,
-          // markers: true,
-        },
-      }
-    );
+  let mm = gsap.matchMedia();
 
-    gsap.fromTo(
-      ".card",
-      {
-        opacity: 0,
-        x: 300,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: "#cards",
-          start: "150px 80%",
-          end: "160px center",
-          scrub: true,
-          // markers: true,
+  mm.add("(min-width:736px)", () => {
+    useGSAP(() => {
+      gsap.fromTo(
+        "#blackBack",
+        {
+          opacity: 0,
+          x: "-30vh", // Keeps the black box sliding in from the left
+          duration: 0.4,
+          delay: 1,
         },
-      }
-    );
+        {
+          opacity: 1,
+          x: 0,
+          scrollTrigger: {
+            trigger: "#blackBack",
+            start: "150px 80%",
+            end: "200px center",
+            scrub: true,
+            // markers: true,
+          },
+        }
+      );
 
-    gsap.fromTo(
-      "#proj-Title",
-      {
-        opacity: 0,
-        y: 50,
-        duration: 1.6,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: "#proj-Title",
-          start: "150px 60%",
-          end: "150px center",
-          scrub: true,
-          // markers: true,
+      gsap.fromTo(
+        ".card",
+        {
+          opacity: 0,
+          x: "30vh",
         },
-      }
-    );
-  }, []);
+        {
+          x: 0,
+          opacity: 1,
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: "#cards",
+            start: "150px 80%",
+            end: "160px center",
+            scrub: true,
+          },
+        }
+      );
+
+      gsap.fromTo(
+        "#proj-Title",
+        {
+          opacity: 0,
+          y: 50,
+          duration: 1.6,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: "#proj-Title",
+            start: "100px 60%",
+            end: "150px center",
+            scrub: true,
+          },
+        }
+      );
+    }, []);
+  });
 
   return (
     <>
       <section
         id="Projects"
-        className="max-h-screen -mt-[300px] sm:mt-0 flex flex-col items-start pt-26 ml-10 sm:ml-36  "
+        className="max-h-screen -mt-[100px] sm:mt-20 flex ml-10 sm:ml-36  "
       >
         <div
           id="blackBack"
-          className="bg-zinc-950  w-[90%] sm:h-[10000px] h-[1200px] drop-shadow-2xl text-center rounded-4xl"
+          className="bg-zinc-950 h-[1100px]  w-[90%] sm:h-[600px]  drop-shadow-2xl text-center rounded-4xl"
         >
           <p
             id="proj-Title"
@@ -88,7 +90,7 @@ export default function Projects() {
           </p>
           <div
             id="cards"
-            className="card grid sm:grid-cols-3 -gap-2 pb-25 sm:pb-40 pt-5 sm:w-full  sm:h-full"
+            className="card grid sm:grid-cols-3 -gap-2 pb-25 sm:pb-10 pt-5 sm:w-full  sm:h-full"
           >
             {/* <Card2 id="card1" />
             <Card2 id="card2" />

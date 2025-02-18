@@ -8,48 +8,51 @@ import resume from "../assets/Mounith_Res.pdf";
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
 
-  useGSAP(() => {
-    gsap.from(["#hi-There", "#hi-Para"], {
-      opacity: 0,
-      x: -300,
-      duration: 0.5,
-      stagger: 0.5,
-      delay: 2,
-    });
+  let mm = gsap.matchMedia();
+  mm.add("(min-width:736px)", () => {
+    useGSAP(() => {
+      gsap.from(["#hi-There", "#hi-Para"], {
+        opacity: 0,
+        x: -300,
+        duration: 0.5,
+        stagger: 0.5,
+        delay: 2,
+      });
 
-    gsap.from(["#nameTitle", "#subName"], {
-      opacity: 0,
-      y: 30,
-      duration: 0.5,
-      stagger: 0.5,
-      delay: 3,
-    });
-    gsap.from(["#smallDes"], {
-      opacity: 0,
-      y: -30,
-      duration: 0.5,
-      delay: 4,
-    });
-    gsap.from("#largeDes", {
-      x: 700,
-      duration: 0.6,
-      delay: 4,
-    });
-    gsap.from(["#tech-Skills", "#tech-btn", "#line2"], {
-      opacity: 0,
-      y: 20,
-      duration: 0.5,
-      stagger: 0.4,
-      delay: 5,
-    });
-    gsap.from(["#explore-works", "#explore-btn"], {
-      opacity: 0,
-      x: -200,
-      duration: 0.5,
-      stagger: 0.4,
-      delay: 6,
-    });
-  }, []);
+      gsap.from(["#nameTitle", "#subName"], {
+        opacity: 0,
+        y: 30,
+        duration: 0.5,
+        stagger: 0.5,
+        delay: 3,
+      });
+      gsap.from(["#smallDes"], {
+        opacity: 0,
+        y: -30,
+        duration: 0.5,
+        delay: 4,
+      });
+      gsap.from("#largeDes", {
+        x: 700,
+        duration: 0.6,
+        delay: 4,
+      });
+      gsap.from(["#tech-Skills", "#tech-btn", "#line2"], {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        stagger: 0.4,
+        delay: 5,
+      });
+      gsap.from(["#explore-works", "#explore-btn"], {
+        opacity: 0,
+        x: -200,
+        duration: 0.5,
+        stagger: 0.4,
+        delay: 6,
+      });
+    }, []);
+  });
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
@@ -59,7 +62,7 @@ export default function Home() {
     <>
       <section
         id="Home"
-        className="pt-10 ml-5 mr-10 flex flex-col items-start  sm:pt-56 sm:ml-36 sm:h-screen"
+        className="h-screen pt-10 ml-3 mr-10 flex flex-col items-start  sm:pt-56 sm:ml-36 sm:h-screen"
       >
         <div id="hi-There" className="hiThere mt-5 sm:m-0">
           <p id="hi-Para" className="font-extrabold text-lg sm:text-2xl">

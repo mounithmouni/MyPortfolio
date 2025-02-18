@@ -5,25 +5,30 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Card(props) {
   const { cardList } = props;
 
-  useGSAP(() => {
-    gsap.fromTo(
-      "#card",
-      {
-        opacity: 0,
-        x: 500,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-          trigger: "#card",
-          start: "-900px 70%",
-          end: "center center",
-          scrub: true,
+  let mm = gsap.matchMedia();
+
+  mm.add("(min-width:736px)", () => {
+    useGSAP(() => {
+      gsap.fromTo(
+        "#card",
+        {
+          opacity: 0,
+          x: 500,
         },
-      }
-    );
-  }, []);
+        {
+          opacity: 1,
+          x: 0,
+          scrollTrigger: {
+            trigger: "#card",
+            start: "-900px 70%",
+            end: "center center",
+            scrub: true,
+          },
+        }
+      );
+    }, []);
+  });
+
   return (
     <>
       <div

@@ -11,8 +11,13 @@ body {
     background-color: #f8fcfd;
     color: #333333;
     overflow-x: hidden;
-    
     scrollbar-color: transparent;
+  }
+  @media (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+    }
+    
   }
   #commonHead {
     font-weight: 600;

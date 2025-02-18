@@ -8,66 +8,70 @@ import { useGSAP } from "@gsap/react";
 export default function Education() {
   const [selectedYear, setSelectedYear] = useState(2024);
   gsap.registerPlugin(ScrollTrigger);
-  useGSAP(() => {
-    gsap.fromTo(
-      "#education_para",
-      {
-        opacity: 0,
-        y: 50,
-        duration: 0.4,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: "#education_para",
-          start: "-50px 80%",
-          end: "center top",
-          scrub: true,
-          // markers: true,
-        },
-      }
-    );
+  let mm = gsap.matchMedia();
 
-    gsap.fromTo(
-      "#doy",
-      {
-        opacity: 0,
-        x: -800,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: "#doy",
-          start: "-200px 80%",
-          end: "cemter center",
-          scrub: true,
-          // markers: true,
+  mm.add("(min-width:736px)", () => {
+    useGSAP(() => {
+      gsap.fromTo(
+        "#education_para",
+        {
+          opacity: 0,
+          y: 50,
+          duration: 0.4,
         },
-      }
-    );
+        {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: "#education_para",
+            start: "-50px 80%",
+            end: "center top",
+            scrub: true,
+            // markers: true,
+          },
+        }
+      );
 
-    gsap.fromTo(
-      "#vline",
-      {
-        opacity: 0,
-        y: 150,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: "#vline",
-          start: "center bottom",
-          end: "50px center",
-          scrub: true,
-          // markers: true,
+      gsap.fromTo(
+        "#doy",
+        {
+          opacity: 0,
+          x: -800,
         },
-      }
-    );
-  }, []);
+        {
+          opacity: 1,
+          x: 0,
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: "#doy",
+            start: "-200px 80%",
+            end: "cemter center",
+            scrub: true,
+            // markers: true,
+          },
+        }
+      );
+
+      gsap.fromTo(
+        "#vline",
+        {
+          opacity: 0,
+          y: 150,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: "#vline",
+            start: "center bottom",
+            end: "50px center",
+            scrub: true,
+            // markers: true,
+          },
+        }
+      );
+    }, []);
+  });
   function handleCard(year) {
     setSelectedYear(year);
   }
@@ -80,7 +84,7 @@ export default function Education() {
     <>
       <section
         id="Education"
-        className="h-screen flex flex-col items-start pt-26  sm:ml-36 sm:h-screen"
+        className="h-screen flex flex-col -mt-[200px] items-start pt-26  sm:ml-36 sm:h-screen"
       >
         <div className="text-center w-[90%] flex justify-center items-center">
           <p

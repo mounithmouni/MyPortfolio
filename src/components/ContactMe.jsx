@@ -3,52 +3,58 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import arrow from "../assets/arrow.png";
 export default function ContactMe() {
-  useGSAP(() => {
-    gsap.fromTo(
-      ["#p1", "#p2", "#p3", "#btn1"],
-      {
-        opacity: 0,
-        y: 30,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: "#headers-Cme",
-          start: "-140px 80%",
-          end: "-10px 500px",
-          scrub: true,
-          // markers: true,
+  let mm = gsap.matchMedia();
+
+  mm.add("(min-width:736px)", () => {
+    useGSAP(() => {
+      gsap.fromTo(
+        ["#p1", "#p2", "#p3", "#btn1"],
+        {
+          opacity: 0,
+          y: 30,
+          duration: 2,
         },
-      }
-    );
-    gsap.fromTo(
-      ["#d1", "#d2", "#d3"],
-      {
-        opacity: 0,
-        x: 300,
-        duration: 1,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: "#quickLink",
-          start: "-140px 80%",
-          end: "1px 500px",
-          scrub: true,
-          // markers: true,
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: "#headers-Cme",
+            start: "160px 80%",
+            end: "200px 500px",
+            scrub: true,
+            markers: true,
+          },
+        }
+      );
+      gsap.fromTo(
+        ["#d1", "#d2", "#d3"],
+        {
+          opacity: 0,
+          x: 300,
+          duration: 3,
+          delay: 2,
         },
-      }
-    );
-  }, []);
+        {
+          opacity: 1,
+          x: 0,
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: "#quickLink",
+            start: "-140px 80%",
+            end: "1px 500px",
+            scrub: true,
+            // markers: true,
+          },
+        }
+      );
+    }, []);
+  });
   return (
     <>
       <section
         id="Contact"
-        className="h-[1100px]  mt-[400px] sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
+        className="h-screen  mt-[300px] sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-screen"
       >
         <div id="headers-Cme" className="text-center w-[90%]">
           <p

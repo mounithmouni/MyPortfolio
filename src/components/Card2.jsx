@@ -4,7 +4,7 @@ export default function Card2(props) {
   const { projInformation } = props;
 
   return (
-    <div className="w-[90%] mx-auto h-[95%] sm:mt-10 mt-0 sm:mx-auto mb-10 sm:mb-0 sm:w-[80%] sm:h-[82%] bg-white rounded-2xl overflow-hidden">
+    <div className="w-[90%] h-[95%] mx-auto sm:mt-10 mt-0 sm:mx-auto mb-10 sm:mb-0 sm:w-[80%] sm:h-[75%] bg-white rounded-2xl overflow-hidden">
       <p className="text-start ml-5 mt-5 sm:mt-10 font-extrabold">
         {projInformation.projName}
       </p>
