@@ -1,4 +1,6 @@
 import zomatoClone from "../assets/zomato.png";
+import todoImg from "../assets/TodoImg.png";
+import weatherImg from "../assets/WeatherAppImg.png";
 export const cardData = [
   {
     name: "B.Tech",
@@ -26,17 +28,23 @@ export const PROJECTSDATA = [
     btn2: "Tailwind CSS",
     projName: "Zomato Clone",
     imgUrl: zomatoClone,
+    liveUrl: "https://github.com/mounithmouni/zomato_clone",
+    demoUrl: "https://github.com/mounithmouni/zomato_clone",
   },
   {
     btn1: "ReactJs",
     btn2: "Tailwind CSS",
     projName: "Weather App",
-    imgUrl: zomatoClone,
+    imgUrl: weatherImg,
+    liveUrl: "https://weather-web-app-5.netlify.app/",
+    demoUrl: "https://github.com/mounithmouni/Weather-Web-App",
   },
   {
-    btn1: "ReactJs",
-    btn2: "Tailwind CSS",
+    btn1: "HTML&CSS",
+    btn2: "JavaScript",
     projName: "Todo List",
-    imgUrl: zomatoClone,
+    imgUrl: todoImg,
+    liveUrl: "https://todos-408607.netlify.app/",
+    demoUrl: "https://github.com/mounithmouni/ToDo_App",
   },
 ];
