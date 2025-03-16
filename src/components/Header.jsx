@@ -11,7 +11,7 @@ function Header() {
     gsap.from("#navbar", {
       opacity: 0,
       duration: 1,
-      delay: 1,
+      delay: 0.3,
     });
   }, []);
 

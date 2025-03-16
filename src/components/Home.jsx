@@ -16,7 +16,7 @@ export default function Home() {
         x: -300,
         duration: 0.5,
         stagger: 0.5,
-        delay: 2,
+        delay: 0.8,
       });
 
       gsap.from(["#nameTitle", "#subName"], {
@@ -24,32 +24,33 @@ export default function Home() {
         y: 30,
         duration: 0.5,
         stagger: 0.5,
-        delay: 3,
+        delay: 1.2,
       });
       gsap.from(["#smallDes"], {
         opacity: 0,
         y: -30,
         duration: 0.5,
-        delay: 4,
+        delay: 1.4,
       });
       gsap.from("#largeDes", {
         x: 700,
+        opacity: 0,
         duration: 0.6,
-        delay: 4,
+        delay: 1.4,
       });
       gsap.from(["#tech-Skills", "#tech-btn", "#line2"], {
         opacity: 0,
         y: 20,
         duration: 0.5,
         stagger: 0.4,
-        delay: 5,
+        delay: 1.6,
       });
       gsap.from(["#explore-works", "#explore-btn"], {
         opacity: 0,
         x: -200,
         duration: 0.5,
         stagger: 0.4,
-        delay: 6,
+        delay: 1.8,
       });
     }, []);
   });
@@ -62,7 +63,7 @@ export default function Home() {
     <>
       <section
         id="Home"
-        className="h-screen pt-10 ml-3 mr-10 flex flex-col items-start  sm:pt-56 sm:ml-36 sm:h-screen"
+        className="h-screen pt-10 ml-3 mr-10 flex flex-col items-start   sm:pt-56 sm:ml-36 sm:h-screen"
       >
         <div id="hi-There" className="hiThere mt-5 sm:m-0">
           <p id="hi-Para" className="font-extrabold text-lg sm:text-2xl">
@@ -110,7 +111,7 @@ export default function Home() {
               revolves around translating ideas into visually stunning,
               functional digital solutions.
             </p>
-            <div className="flex flex-row justify-between sm:gap-60 mt-5 sm:mt-10">
+            <div className="flex flex-row justify-between sm:gap-60 mt-5 sm:mt-5">
               <div className={isVisible ? "hiTheres" : ""}>
                 <p
                   id="tech-Skills"
@@ -123,6 +124,7 @@ export default function Home() {
                 <img src={arrow} alt="arrow Png" className="arrow" />
               </button>
             </div>
+
             <Dropdown isVisible={isVisible} />
             <hr className="new1" id="line2" />
             <div

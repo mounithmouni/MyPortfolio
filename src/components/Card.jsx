@@ -42,13 +42,17 @@ export default function Card(props) {
         </a>
         {/* <span className="font-bold mr-2 text-xl">College Name</span> */}
         <p className="mb-4 font-normal text-gray-700 text-xl">
+          <span>College Name:</span>
           {cardList.clgName}
         </p>
         {/* <span className="font-bold mr-2">Year of Passed</span> */}
-        <p className="mb-4 font-normal text-gray-700 text-xl">{cardList.yop}</p>
+        <p className="mb-4 font-normal text-gray-700 text-xl">
+          <span>College Name:</span>
+          {cardList.yop}
+        </p>
         {/* <span className="font-bold mr-2">Stream</span> */}
         <p className="mb-4 font-normal text-gray-700 text-xl">
-          {cardList.stream}
+          <span>College Name:</span> {cardList.stream}
         </p>
       </div>
     </>

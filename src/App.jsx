@@ -1,6 +1,5 @@
 import Education from "./components/Education";
 import Header from "./components/Header";
-// import Card from "./components/Card";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 
@@ -10,8 +9,8 @@ export default function App() {
       <Header />
       <Education />
       <Projects />
+      {/* <Projectsv1 /> */}
       <ContactMe />
-      {/* <Card /> */}
     </>
   );
 }
