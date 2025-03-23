@@ -92,7 +92,7 @@ export default function Home() {
               <br />
               <button
                 id="res-btn"
-                className="w-fit mt-2 py-1 px-2 text-xs sm:text-base sm:uppercase sm:px-3 sm:py-1 border-2 transition-all duration-300 hover:border-orange-400 hover:px-3 sm:hover:px-4 "
+                className="w-fit mt-2 py-1 px-2 text-xs sm:text-base sm:uppercase sm:px-3 sm:py-1 border-2 transition-all duration-300 hover:border-orange-400 hover:px-3 sm:hover:px-4 hover:rounded-2xl "
               >
                 <a href={resume} target="blank">
                   Resume

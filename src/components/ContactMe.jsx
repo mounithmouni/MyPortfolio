@@ -75,7 +75,7 @@ export default function ContactMe() {
           </p>
           <button
             id="btn1"
-            className="btn-primary flex items-center mx-auto mt-5 px-5 py-2"
+            className="btn-primary rounded-none flex items-center mx-auto mt-5 px-5 py-2 transition-all duration-300 hover:rounded-2xl"
           >
             <a href="mailto:murthi.mouni@gmail.com" target="_blank">
               Connect with me.

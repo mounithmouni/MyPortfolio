@@ -9,9 +9,7 @@ export default function App() {
       <Header />
       <Education />
       <Projects />
-      {/* <Projectsv1 /> */}
       <ContactMe />
     </>
   );
 }
-// https://tailwindui.com/components/marketing/sections/bento-grids

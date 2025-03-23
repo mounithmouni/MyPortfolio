@@ -21,12 +21,12 @@ export default function Card2(props) {
       </div>
       {/* Adjust 'Live' button placement for mobile responsiveness */}
       <div className="flex flex-row justify-between mx-7 mt-8 sm:mt-13 ">
-        <button className="btn-secondary">
+        <button className="btn-secondary transition-all duration-300 hover:rounded-2xl">
           <a href={projInformation.liveUrl} target="_blank">
             Live
           </a>
         </button>
-        <button className="btn-secondary">
+        <button className="btn-secondary transition-all duration-300 hover:rounded-2xl">
           <a href={projInformation.demoUrl} target="_blank">
             Demo
           </a>
