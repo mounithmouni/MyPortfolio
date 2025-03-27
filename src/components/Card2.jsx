@@ -28,7 +28,7 @@ export default function Card2(props) {
         </button>
         <button className="btn-secondary transition-all duration-300 hover:rounded-2xl">
           <a href={projInformation.demoUrl} target="_blank">
-            Demo
+            Github
           </a>
         </button>
       </div>

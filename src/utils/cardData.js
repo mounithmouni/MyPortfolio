@@ -1,9 +1,10 @@
 import zomatoClone from "../assets/zomato.png";
-import todoImg from "../assets/TodoImg.png";
+import taskList from "../assets/TaskList.png";
 import weatherImg from "../assets/WeatherAppImg.png";
 import bookImg from "../assets/book.png";
 import manBook from "../assets/manOnBooks.png";
 import manProgramming from "../assets/manProgramming.png";
+
 export const cardData = [
   {
     name: "B.Tech",
@@ -48,9 +49,9 @@ export const PROJECTSDATA = [
   {
     btn1: "HTML&CSS",
     btn2: "JavaScript",
-    projName: "Todo List",
-    imgUrl: todoImg,
-    liveUrl: "https://todos-408607.netlify.app/",
-    demoUrl: "https://github.com/mounithmouni/ToDo_App",
+    projName: "Task List",
+    imgUrl: taskList,
+    liveUrl: "https://tasklist4.netlify.app/",
+    demoUrl: "https://github.com/mounithmouni/TaskList",
   },
 ];
