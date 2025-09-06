@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 
 export default function Education() {
   const [selectedYear, setSelectedYear] = useState(2024);
+
   gsap.registerPlugin(ScrollTrigger);
   let mm = gsap.matchMedia();
 

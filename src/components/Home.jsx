@@ -63,7 +63,7 @@ export default function Home() {
     <>
       <section
         id="Home"
-        className="h-screen pt-10 ml-3 mr-10 flex flex-col items-start   sm:pt-56 sm:ml-36 sm:h-screen"
+        className="h-screen pt-10 ml-3 mr-10 flex flex-col items-start ws:pt-42 mac:pt-56 sm:ml-36 sm:h-screen"
       >
         <div id="hi-There" className="hiThere mt-5 sm:m-0">
           <p id="hi-Para" className="font-extrabold text-lg sm:text-2xl">
@@ -81,7 +81,7 @@ export default function Home() {
             RIGHT HERE!
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between gap-5 sm:gap-60">
+        <div className="flex flex-col gap-5 md:flex-row justify-between ws:gap-70 mac:gap-120">
           <div>
             <p
               id="smallDes"
@@ -129,7 +129,7 @@ export default function Home() {
             <hr className="new1" id="line2" />
             <div
               className={`flex gap-2 justify-end ${
-                !isVisible ? "mt-18" : "hidden"
+                !isVisible ? "ws:mt-32" : "hidden"
               }`}
             >
               <p id="explore-works" className="text-base font-mono mt-1">
