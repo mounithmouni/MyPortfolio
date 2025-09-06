@@ -9,10 +9,14 @@ export default function Card2(props) {
         {projInformation.projName}
       </p>
       <div className="flex gap-2 mt-5 mb-3 sm:mb-10 sm:mt-5 pl-5">
-        <button className="btn-primary">{projInformation.btn1}</button>
-        <button className="btn-primary">{projInformation.btn2}</button>
+        <button className="btn-primary rounded-2xl transition-all duration-700 ease-in-out hover:rounded-none">
+          {projInformation.btn1}
+        </button>
+        <button className="btn-primary rounded-2xl transition-all duration-700 ease-in-out hover:rounded-none">
+          {projInformation.btn2}
+        </button>
       </div>
-      <div className="w-[90%] sm:w-[90%] sm:h-[40%] sm:-mt-3 mx-auto sm:mx-auto sm:max bg-orange-400 rounded-xl z-10 translate-y-3 transition-all duration-300 ease-in-out shadow-4xl hover:scale-105 hover:bg-gray-900 hover:shadow-2xl hover:shadow-orange-400 ">
+      <div className="w-[90%] sm:w-[90%] sm:h-[40%] mac:h-[50%] sm:-mt-3 mx-auto sm:mx-auto sm:max bg-orange-400 rounded-xl z-10 translate-y-3 transition-all duration-300 ease-in-out shadow-4xl hover:scale-105 hover:bg-gray-900 hover:shadow-2xl hover:shadow-orange-400 ">
         <img
           src={projInformation.imgUrl}
           alt="Zomato png"

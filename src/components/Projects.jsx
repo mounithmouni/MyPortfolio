@@ -80,7 +80,7 @@ export default function Projects() {
       >
         <div
           id="blackBack"
-          className="bg-zinc-950 h-max  w-[90%] sm:h-[600px]  drop-shadow-2xl text-center rounded-4xl"
+          className="bg-zinc-950 h-max  w-[90%] sm:h-[97%] drop-shadow-2xl text-center rounded-4xl"
         >
           <p
             id="proj-Title"
@@ -92,9 +92,6 @@ export default function Projects() {
             id="cards"
             className="card grid sm:grid-cols-3 -gap-2 pb-25 sm:pb-10 pt-5 sm:w-full  sm:h-full"
           >
-            {/* <Card2 id="card1" />
-            <Card2 id="card2" />
-            <Card2 id="card3" /> */}
             {PROJECTSDATA.map((data) => (
               <Card2
                 className="card"

@@ -54,38 +54,40 @@ export default function ContactMe() {
     <>
       <section
         id="Contact"
-        className="h-screen  mt-[220px] sm:mt-12 flex flex-col items-start pt-26 ml-10 sm:ml-36 sm:h-100vh"
+        className="h-screen  mt-[220px] sm:mt-12 flex flex-col items-start mac:items-center pt-26 ml-10 sm:ml-36 mac:ml-5 sm:h-100vh"
       >
-        <div id="headers-Cme" className="text-center w-[90%]">
+        <div id="headers-Cme" className="text-center w-[90%] mac:w-[100%]">
           <p
             id="p1"
-            className="sm:mt-10 -mt-20 text-4xl text-orange-400 font-extrabold"
+            className="sm:mt-10 -ml-5 text-4xl mac:text-5xl text-orange-400 font-extrabold"
           >
             Contact Me.
           </p>
-          <p id="p2" className="text-5xl sm:text-6xl font-extrabold pt-10">
-            Let's Connect
-          </p>
-          <p
-            id="p3"
-            className="mt-5  sm:text-lg sm:w-[50%] text-center mx-auto "
-          >
-            Feel free to contact me if having any questions. I’m available for
-            new projects or just for chatting.
-          </p>
-          <button
-            id="btn1"
-            className="btn-primary rounded-none flex items-center mx-auto mt-5 px-5 py-2 transition-all duration-300 hover:rounded-2xl"
-          >
-            <a href="mailto:murthi.mouni@gmail.com" target="_blank">
-              Connect with me.
-            </a>
-            <img src={arrow} className="w-5" />
-          </button>
+          <div className="mac:mt-10">
+            <p id="p2" className="text-5xl sm:text-6xl font-extrabold pt-10">
+              Let's Connect
+            </p>
+            <p
+              id="p3"
+              className="mt-5  sm:text-lg sm:w-[50%] text-center mx-auto "
+            >
+              Feel free to contact me if having any questions. I’m available for
+              new projects or just for chatting.
+            </p>
+            <button
+              id="btn1"
+              className="btn-primary rounded-none flex items-center mx-auto mt-5 px-5 py-2 transition-all duration-300 hover:rounded-2xl"
+            >
+              <a href="mailto:murthi.mouni@gmail.com" target="_blank">
+                Connect with me.
+              </a>
+              <img src={arrow} className="w-5" />
+            </button>
+          </div>
         </div>
         <div
           id="quickLink"
-          className="flex flex-col sm:flex-row justify-center mt-20 sm:mt-20 gap-5 sm:gap-86 ml-5 sm:ml-10  "
+          className="flex flex-col sm:flex-row justify-center mt-20 sm:mt-20 mac:mt-30 gap-5 sm:gap-86 ml-5 ws:ml-10 mac:-ml-30  "
         >
           <div id="d1" className="flex flex-col gap-3">
             <h2 className="text-orange-400 text-xl">Contact Me.</h2>

@@ -97,7 +97,7 @@ export default function Education() {
         </div>
 
         {/* Cards & Years */}
-        <div className="sm:flex mt-12 sm:gap-10">
+        <div className="sm:flex mt-12 mac:mt-26 mac:ml-22 sm:gap-10">
           <div className="flex flex-row sm:flex-col gap-10 ml-20 sm:justify-items-start sm:my-auto sm:ml-34">
             {cardData.map((data, i) => (
               <button

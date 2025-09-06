@@ -15,7 +15,7 @@ export const cardData = [
   },
   {
     name: "Intermediate",
-    clgName: "Sri Chaitanya Junior College",
+    clgName: "Sri Chaitanya Junior College, Bommana Campus",
     yop: 2020,
     stream: "MPC(Mathematic Physics & Chemistry",
     imgUrl: manBook,

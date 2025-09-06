@@ -129,7 +129,7 @@ export default function Home() {
             <hr className="new1" id="line2" />
             <div
               className={`flex gap-2 justify-end ${
-                !isVisible ? "ws:mt-32" : "hidden"
+                !isVisible ? "mt-44 ws:mt-32" : "hidden"
               }`}
             >
               <p id="explore-works" className="text-base font-mono mt-1">

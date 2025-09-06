@@ -32,7 +32,7 @@ export default function Card(props) {
   return (
     <>
       <div id="card" className="my-auto mx-10 mt-10 sm:mt-20 p-10">
-        <div class="-ml-10 h-[500px] w-83 md:h-max overflow-hidden rounded-xl bg-white shadow-md md:w-full">
+        <div class="-ml-10 h-[500px] w-83 md:h-max rounded-xl bg-white shadow-md md:w-full">
           <div class="md:flex">
             <div class="md:shrink-0">
               <img
